@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Girlfriend Day sayang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body
+    style="
+      background-image: url(https://i.imghippo.com/files/uh4097byg.jpeg);
+    "
+    class="flex justify-center h-screen items-center"
+  >
+    <div
+      class="bg-white border px-11 py-20 border-4 border-gray-300 shadow-lg shadow-blue-300 rounded-xl text-center animate__animated animate__backInDown m-8 w-80"
+      id="kartu"
+    >
+      <h1 class="text-3xl">Happy Girlfriend Day Sayang</h1>
+      <h1
+        class="text-4xl text-blue-500 font-bold animate__animated animate__pulse animate__infinite"
+      >
+        🤍🤍🤍
+      </h1>
+      <button
+        class="p-2 bg-blue-600 text-white rounded mt-5 hover:bg-blue-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada"
+        onclick="ubahKartu()"
+      >
+        Klik Disini Sayang!
+      </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+      });
+      let kartu = document.getElementById("kartu");
+      function ubahKartu() {
+        kartu.innerHTML = `    <h1 class="font-semibold text-wrap animate__animated animate__zoomIn">
+      Happy Girlfriend Day, cintaku yang paling bawel tapi paling aku sayang!
+Terima kasih udah tahan sama aku yang kadang ngeselin, kadang ngilang, tapi sayangnya tetap serius. Kamu itu kombinasi unik antara cerewet dan lucu kayak anak kecil 🤏🏻.
+Maaf ya kalau aku gak selalu romantis, tapi hatiku full cuma buat kamu (udah gak muat buat yang lain).
+Di hari spesial ini, kamu bebas minta apa aja... asal jangan minta yang aneh-aneh 😅🤍
+    </h1>
+    <h2 class="mt-3 animate__animated animate__fadeIn">
+      - Dari : Andhika Dirgantara -
+    </h2>
+    <button
+      class="p-2 bg-slate-600 text-white rounded mt-5 hover:bg-slate-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada"
+      onclick="refresh()"
+    >
+      Tutup
+    </button>
+    `;
+      }
+      function refresh() {
+        location.reload();
+      }
+    </script>
+  </body>
+</html>
